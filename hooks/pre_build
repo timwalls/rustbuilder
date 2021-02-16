@@ -7,4 +7,4 @@ echo "Context is ${CONTEXT}"
 docker buildx create --use ${CONTEXT}
 
 # Install QEmu emulators
-docker run -it --rm --privileged tonistiigi/binfmt --install all
+docker run --rm --privileged tonistiigi/binfmt --install all
