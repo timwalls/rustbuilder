@@ -2,4 +2,5 @@
 
 PLATFORMS=linux/amd64,linux/arm/v7
 
-docker buildx build --platform ${PLATFORMS} -f ${DOCKERFILE_PATH -t ${IMAGE_NAME} .
+
+docker buildx build --platform ${PLATFORMS} -f ${DOCKERFILE_PATH} -t ${IMAGE_NAME} .
