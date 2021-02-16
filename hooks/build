@@ -2,5 +2,9 @@
 
 PLATFORMS=linux/amd64,linux/arm/v7
 
+CONTEXT=`docker context inspect --format="{{.Name}}"`
 
+echo "Context is ${CONTEXT}"
+
+docker build create --use ${CONTEXT}
 docker buildx build --platform ${PLATFORMS} -f ${DOCKERFILE_PATH} -t ${IMAGE_NAME} .
