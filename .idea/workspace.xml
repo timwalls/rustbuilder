@@ -33,7 +33,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb800cd3-ae85-4fbf-9acf-6d8aef25f219" name="Default Changelist" comment="" />
+    <list default="true" id="eb800cd3-ae85-4fbf-9acf-6d8aef25f219" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="com.google.cloudcode.ide_session_index" value="20210216_0000" />
+    <property name="com.google.cloudcode.ide_session_index" value="20210216_0001" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="google.kubernetes.settings" />
   </component>
@@ -78,6 +80,7 @@
       <workItem from="1599771284924" duration="1064000" />
       <workItem from="1609775130711" duration="546000" />
       <workItem from="1613468328802" duration="907000" />
+      <workItem from="1613469266921" duration="759000" />
     </task>
     <task id="LOCAL-00001" summary="The horror, the horror">
       <created>1599759684424</created>
@@ -128,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599771989622</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="First version of a Rust builder base image">
+      <created>1613469323273</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1613469323276</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,13 +176,7 @@
     <MESSAGE value="Updated with Kubernetes instructions." />
     <MESSAGE value="Enabled server keepalives on the SSH tunnel" />
     <MESSAGE value="Added ExitOnForwardFailure so we can retry if the port forward doesn't work for some reason" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ExitOnForwardFailure so we can retry if the port forward doesn't work for some reason" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1490" y="711" key="Vcs.Push.Dialog.v2" timestamp="1599771995377">
-      <screen x="66" y="23" width="3774" height="2137" />
-    </state>
-    <state x="1489" y="711" key="Vcs.Push.Dialog.v2/3840.1316.1920.1057/64.23.3776.2137@64.23.3776.2137" timestamp="1599762988309" />
-    <state x="1490" y="711" key="Vcs.Push.Dialog.v2/3840.1316.1920.1057/66.23.3774.2137@66.23.3774.2137" timestamp="1599771995377" />
+    <MESSAGE value="First version of a Rust builder base image" />
+    <option name="LAST_COMMIT_MESSAGE" value="First version of a Rust builder base image" />
   </component>
 </project>
