@@ -1,8 +1,11 @@
 FROM ubuntu:bionic as builder
+ARG BUILDPLATFORM
+ARG TARGETPLATFORM
 RUN apt-get update
 RUN apt-get install -y build-essential
 RUN apt-get install -y clang
 RUN apt-get install -y curl
+RUN echo "I am running on $BUILDPLATFORM, building for $TARGETPLATFORM"
 
 # Install Rust from scratch
 WORKDIR /usr/rust
