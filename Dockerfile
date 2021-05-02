@@ -25,5 +25,5 @@ RUN cargo install cargo-build-dependencies
 # ever actually running it directly)
 WORKDIR /usr/src
 COPY files/cargo.sh ./
-ENTRYPOINT [ "/usr/src/cargo.sh" ]
-CMD [ "build" ]
+
+CMD /bin/bash
