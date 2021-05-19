@@ -3,9 +3,8 @@ ARG BUILDPLATFORM
 ARG TARGETPLATFORM
 RUN apt-get update
 RUN apt-get install -y build-essential
-RUN apt-get install -y clang
-RUN apt-get install -y curl
-RUN apt-get install -y git
+RUN apt-get install -y clang curl git
+RUN apt-get install -y libssl-dev pkg-config
 RUN echo "I am running on $BUILDPLATFORM, building for $TARGETPLATFORM"
 
 # Install Rust from scratch
@@ -19,6 +18,7 @@ ENV PATH="/root/.cargo/bin:$PATH"
 # as two separate steps
 WORKDIR /usr/src
 RUN cargo install cargo-build-dependencies
+RUN cargo install cargo-audit
 
 # Now cd to the /usr/src directory and do a build
 # (although the expectation is you'll use this image as a base rather than
