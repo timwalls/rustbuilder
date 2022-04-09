@@ -20,6 +20,9 @@ WORKDIR /usr/src
 RUN cargo install cargo-build-dependencies
 RUN cargo install cargo-audit
 
+# Not sure how I didn't need to do this separately before, but clearly I do now
+RUN cargo install sccache
+
 # Now cd to the /usr/src directory and do a build
 # (although the expectation is you'll use this image as a base rather than
 # ever actually running it directly)
