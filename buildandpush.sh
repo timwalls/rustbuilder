@@ -3,7 +3,7 @@
 PLATFORMS=linux/amd64,linux/arm/v7,linux/arm64
 
 IMAGE=snowgoons/rustbuilder
-TAG=rustc-1.62.0
+TAG=rustc-1.63.0
 
 docker buildx rm rustbuilder-builder || true
 docker buildx create --name rustbuilder-builder
