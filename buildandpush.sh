@@ -1,6 +1,7 @@
 #!/bin/sh
 
-PLATFORMS=linux/amd64,linux/arm/v7,linux/arm64
+#PLATFORMS=linux/amd64,linux/arm/v7,linux/arm64
+PLATFORMS=linux/amd64,linux/arm64
 
 IMAGE=snowgoons/rustbuilder
 TAG=rustc-1.68.2
