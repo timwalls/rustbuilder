@@ -1,4 +1,4 @@
-FROM ubuntu:bionic as builder
+FROM ubuntu:bionic-20230308 as builder
 ARG BUILDPLATFORM
 ARG TARGETPLATFORM
 RUN apt-get update
@@ -21,7 +21,11 @@ RUN cargo install cargo-build-dependencies
 RUN cargo install cargo-audit
 
 # Not sure how I didn't need to do this separately before, but clearly I do now
-RUN cargo install sccache
+#
+# I can't build on arm/v7 any more for some reason.  Since I don't really
+# use it any more, just going to leave it out of this
+# RUN cargo install sccache
+
 
 # Now cd to the /usr/src directory and do a build
 # (although the expectation is you'll use this image as a base rather than
