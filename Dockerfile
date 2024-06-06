@@ -1,4 +1,4 @@
-FROM ubuntu:bionic-20230308 as builder
+FROM ubuntu:jammy-20240530 as builder
 ARG BUILDPLATFORM
 ARG TARGETPLATFORM
 RUN apt-get update
